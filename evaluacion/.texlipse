@@ -1,0 +1,14 @@
+#TeXlipse project settings
+#Fri Jan 04 16:21:27 CLST 2013
+markTmpDer=true
+builderNum=2
+outputDir=
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=document.tex
+outputFile=document.pdf
+langSpell=es
+markDer=true
+srcDir=

@@ -1,0 +1,57 @@
+%%This is a very basic article template.
+%%There is just one section and two subsections.
+\documentclass{article}
+\title{Algoritmo de evaluación}
+\begin{document}
+\maketitle
+
+
+\section{Marco teórico}
+La capacidad de un alumno no se puede medir en términos absolutos dado una
+métrica definida, eso lo podemos apreciar claramente en la situación actual: Un
+alumno que obtiene un $7.0$ como calificación no tiene el doble de potencial que
+una persona que obtuvo un $3.5$
+
+En un sistema de evaluación correctamente formado se debería cumplir lo
+siguiente: Dado que no conocemos de un alumno más que una nota, para un alumno
+con mayor capacidad $A_i$ y un alumno con menor capacidad $A_j$ se debe cumplir
+la relación
+$nota(A_i)>=nota(A_j)$
+definición: Capacidad: la capacidad de un alumno no se puede estudiar mediate
+una métrica absoluta ya que depende del contexto, eso quiere decir, la
+clasificación de ``capaz'' depende netamente de la universidad en donde se esté
+estudiando, por lo tanto, se estudia de forma comparativa.
+Capacidad es la sistemática repetición de imponer una posición de la evaluación
+con respecto sus pares.
+\section{Cuantil estable}
+El ranking estable de un alumno es la combinación lineal de rankings que
+producen que un sistema sea lo más estable posible.
+$Q_k = \sum_i p_i b_i r_i$
+
+en donde $\sum p_i = 1$ es una función de ponderación que eliminará los rankings
+ruidosos, $b_i$ es una variable booleana que indicará si el alumno cursó la
+asignatura y $r_i$ es el ranking obtenido en la asignatura $i$.
+\section{Función distancia}
+Un profesor encargado de un curso siempre se aleja de una condición ideal, por
+lo tanto
+$d(R(P_i,\Omega))>=0$
+La función distanca debe ser invariante ( o por lo menos robusta) con respecto
+la cantidad de alumnos de un curso
+ si $A\subsetP_i$ entonces $d(R(P_i,\Omega)) = d(A,\Omega)$
+
+ 
+ \section{Construcción de la función distancia}
+ La función distancia, debe ser
+ 
+
+
+\subsection{Subtitle}
+
+Plain text.
+
+\subsection{Another subtitle}
+
+More plain text.
+
+
+\end{document}
