@@ -1,0 +1,14 @@
+#TeXlipse project settings
+#Wed Jan 23 02:53:01 CLST 2013
+markTmpDer=true
+builderNum=2
+outputDir=
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=cluster.tex
+outputFile=cluster.pdf
+langSpell=en
+markDer=true
+srcDir=

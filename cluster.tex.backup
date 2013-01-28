@@ -1,0 +1,63 @@
+%%This is a very basic article template.
+%%There is just one section and two subsections.
+
+\documentclass{article}
+
+\usepackage{amsfonts}
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+%% ambientes de teoremas
+\newtheorem{problema}{Problema}
+
+\author{Leonardo Andrés Jofré Flor}
+\title{Metodo de clasificación y visualización de grupos probabilistas}
+
+\begin{document}
+
+% definir lo que es una tupla
+Sea un conjunto aleatorio de tuplas en $T=\{x_i\}$ se busca obtener la función
+de densidad de probabilidad $p:\mathbb{R}^n\to[0,1]$
+
+% explicar la relacion entre la función de densidad acumulada y la función de
+% orden de los datos
+Aproximación de la función de densidad acumulada, caso elemental
+
+% cualquier cambio de base genera una nueva aproximación de clusterización
+
+% la función de probabilidad puede ser representada como combinación lineal
+
+% la función de orden puede aproximar a la distribución acumulada
+
+% solución recursiva
+
+% la función de densidad de puede aproximar a la combinación lineal de funciones
+
+Si consideramos la función indicatriz
+$$p_\epsilon(x,y)=1 si \|x\|\le \epsilon$$
+
+$\sum c_{i,j}p_\epsilon(x-x_i,y-y_j)$
+
+% encontrar la base que produce que la función sea solución de una ecuación
+% diferencial de Sturm-Liouville ayudaría a encontrar una mejor aproximación
+
+% inversa generalizada de Moore-Penrose
+
+% numero de grupos
+
+% visualización 3D
+
+% Convergencia al número de clusters
+
+\subsection{Anexos}
+
+\begin{problema}
+	Sea $f:\mathbb{R}^2\to\mathbb{R}$ y sea \partial A
+\end{problema}
+
+More plain text.
+
+
+\end{document}

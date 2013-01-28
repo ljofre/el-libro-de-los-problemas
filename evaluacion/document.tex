@@ -6,29 +6,42 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
-
+\usepackage{amsthm}
+\author{Leonardo Andrés Jofré Flor}
 \title{Algoritmo de evaluación}
 \begin{document}
 \maketitle
+
+\section{Introducción}
+En el presente trabajo se propone una métrica de calidad docente
 
 
 \section{Marco teórico}
 La capacidad de un alumno no se puede medir en términos absolutos dado una
 métrica definida, eso lo podemos apreciar claramente en la situación actual: Un
 alumno que obtiene un $7.0$ como calificación no tiene el doble de potencial que
-una persona que obtuvo un $3.5$
+una persona que obtuvo un $3.5$ solo podemos decir que tiene una capacidad
+mayor, o sea, que tiene mayor facilidad para resolver problemas en el contexto
+de la evaluación y el tipo de evaluación.
 
 En un sistema de evaluación correctamente formado se debería cumplir lo
 siguiente: Dado que no conocemos de un alumno más que una nota, para un alumno
 con mayor capacidad $A_i$ y un alumno con menor capacidad $A_j$ se debe cumplir
-la relación
-$nota(A_i)>=nota(A_j)$
+la relación en una asignatura $k$
+$nota_k(A_i)\geq nota_k(A_j)$ con una probabilidad $p_{i,j,k}$, una bastante
+fuete es que la probabilidad de que la suma de las notas haga crecer en
+probabilidad la relación
+
+$\sum_k nota_k(A_i)\geq \sum_k nota_k(A_j)$ tenga mayor probabilidad de
+cumplirse en la medida de que $k$ es mayor
+
 definición: Capacidad: la capacidad de un alumno no se puede estudiar mediate
 una métrica absoluta ya que depende del contexto, eso quiere decir, la
 clasificación de ``capaz'' depende netamente de la universidad en donde se esté
 estudiando, por lo tanto, se estudia de forma comparativa.
 Capacidad es la sistemática repetición de imponer una posición de la evaluación
 con respecto sus pares.
+
 \section{Cuantil estable}
 El ranking estable de un alumno es la combinación lineal de rankings que
 producen que un sistema sea lo más estable posible.
@@ -37,17 +50,22 @@ $Q_k = \sum_i p_i b_i r_i$
 en donde $\sum p_i = 1$ es una función de ponderación que eliminará los rankings
 ruidosos, $b_i$ es una variable booleana que indicará si el alumno cursó la
 asignatura y $r_i$ es el ranking obtenido en la asignatura $i$.
+
 \section{Función distancia}
 Un profesor encargado de un curso siempre se aleja de una condición ideal, por
 lo tanto
 $d(R(P_i,\Omega))>=0$
-La función distanca debe ser invariante ( o por lo menos robusta) con respecto
+La función distanca debe ser invariante (o por lo menos robusta) con respecto
 la cantidad de alumnos de un curso
- si $A\subsetP_i$ entonces $d(R(P_i,\Omega)) = d(A,\Omega)$
+ si $A\subset P_i$ entonces $d(R(P_i,\Omega)) = d(A,\Omega)$
 
  
  \section{Construcción de la función distancia}
- La función distancia, debe ser
+ La función distancia, debe de cumplir todas las condiciones anteriormente
+ descritas y me debo detener en la construcción de la función distancia misma.
+ 
+ la función distancia toma como parámetros de entrada dos vectores que no
+ necesariamente tienen la misma cantidad de elementos
  
 
 
