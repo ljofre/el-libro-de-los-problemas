@@ -1,10 +1,102 @@
 \documentclass{article}
 
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\title{Relación entre conjuntos de datos}
+\author{Leonardo Andrés Jofré Flor}
+
 \begin{document}
-$X\sim p_x(t)$
-$Y = f(X)\sim p_y(x)$
+\maketitle
 
-problema: encontrar la función $f$
+\begin{abstract}
+El objetivo es encontrar la forma de relacionar $n$ variables explicativas a una explicada de forma más robusta. Otro objetivo es el de encontrar funciones que relaciones variables aleatorias de forma alternativa a las sugeridas por la técnica de regresión lineal, considerando que si debe existir una relación entre variables aleatorias, esta debe conservar la transformación de variables aleatorias en término de las distribuciones de probabilidad. Esto quiere decir que conociendo la información de muestras, mediante este método se puede linealizar de tal manera que la matriz de correlación pueda encontrar relaciones no lineales entre variables aleatorias.
+\end{abstract}
 
-$f(t) = F^{-1}_Y(F_X(t))$
+
+\section{Preliminares}
+
+\subsection{Caso elemental para dos variables}
+
+Consideremos variables aleatorias $X$ e $Y$ tal que una es una transformación de la otra
+
+$$X\sim p_x(t)$$
+$$Y = f(X)\sim p_y(x)$$
+
+$$f(t) = F^{-1}_Y(F_X(t))$$
+
+la función de densidad del error 
+$$\epsilon = F^{-1}_Y(F_X(X))-Y = X - F^{-1}_X(F_Y(Y))$$
+
+de lo que se deduce la primera medida de relación entre variables aleatorias
+
+primera medida de relacion entre variables aleatorias
+Dos variables aleatorias están relacionadas si
+$X+Y = F^{-1}_Y(F_X(X)) + F^{-1}_X(F_Y(Y))$
+
+teorema: $\mathbb{E}\left[ \epsilon \right] = 0$
+
+\subsection{Relación entre dos variables dado un cambio de base}
+
+\subsection{Considerando que $f$ no es biyectiva}
+
+Si consideramos $$V = \alpha X + \beta Y $$ y $$W = \gamma X + \delta Y $$ 
+
+Por lo que el error queda definido como $$\epsilon = \|F^{-1}_{V}(F_W(W))-V\|$$
+
+Se pueden considerar como nuevas variables a relacionar mediante el procedimiento anterior.
+
+\section{Regresión lineal asociada}
+
+Es deseable saber que tan relacionadas están un conjunto de variables
+$$\min_{\{\alpha \in \}}\sum_{i\not =j} \alpha_{i,j} \|F^{-1}_{X_i}(F_{X_j}(x_{jk}))-x_{ik}\|$$ por lo que ahora se ha de encontrar los valores de $\alpha_k$ que minimicen la función de error.
+
+Con las siguientes restricciones
+$\alpha_{ij}=\alpha_{ji}$ y también $\alpha_{ii}=0$, además debe ser una ponderación por lo que se debe cumplir que $$\sum_{i,j} \alpha_{i,j} = 1$$
+\section{Grafo ponderado de relacion entre variables aleatorias}
+Consideremos la siguiente ecuación
+
+$$\sum_{i,j} \alpha_{i,j} F^{-1}_{X_i}(F_{X_j}(t))=0$$
+
+Se puede encontrar la matriz $A$ de todos los coeficientes $\alpha_{i,j}$ que minimizan la $l_2$
+
+\section{Árbol generador máximo}
+El arbol generador máximo nos dice la dependencia entre las variables encontrando como raiz los elementos mas dependientes y las hojas las variables más independientes.
+
+\section{Linealización de las relaciones}
+
+\section{Cambio de base}
+La idea ahora es almacenar la información relacionada entre las distintas variables en un conjunto mucho menor de variables.
+
+\section{versión combinacional}
+
+\section{costo computacional}
+Una se las cosas interesantes de este método es el costo computacional, que es el costo de ordenar los datos
+
+\section{Convergencia a la ortogonalidad}
+
+
+
+\chapter{Ecuaciones diferenciales}
+Consideremos unas nuevas columnas con diferenciales de los datos reales, otras columnas también con las sumas hasta ese punto, o sea, las integrales. A partir de este metodo se pueden generar nuevas ecuaciones que serán diferenciales con coeficientes estocásticos.
+
+Ejemplo
+
+$X_1\sim \mathcal{N}\left(\mu=0,\sigma=1\right)$
+$X_2 = 3X_1^2+2X_1+5+\mathcal{N}\left(\mu=0,\sigma=1\right)$ en la cual claramente no existe una relación lineal entre las variables, la pregunta es si se puede generar una relación entre las variables como una ecuación diferencial.
+
+definición: Inversas parciales de una función
+
+Existencia de las inversas parciales
+
+Conjunto solución
+
+Unicidad
+
+Conversión del problema a una ecuación diferencial no homogenea
+
+funcion de green de la ecuación diferencial
+
 \end{document}
