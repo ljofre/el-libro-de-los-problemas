@@ -1,0 +1,60 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\newtheorem{prop}{Proposición}
+
+
+\title{Función de orden y algoritmo eficiente de predicción}
+\author{Leonardo Andrés Jofré Flor}
+\begin{document}
+\maketitle
+
+\begin{summary}
+El presente trabajo propone una metodología para hacer análisis multivariable
+agregando una nueva consideración a la regresión lineal clásica. Esta
+consideración es el orden de los valores que se van obteniendo. Esto quiere
+decir que si dos variables están relacionadas de forma creciente el orden de las
+variables debe ser invariante con respecto la transformación, o por lo menos, no
+sebe sufrir cambios significativos, por lo menos en alguna medida. Esta medida
+será una nueva definición de covarianza y una nueva definición para medir el
+error generado por una estimación de este tipo.
+\end{summary}
+
+\begin{prop}
+Una función de relación probabilista entre dos funciones $f$ y $g$ es aquella
+que considera que si las variables ``estuvieran relacionadas'' es la función que
+transforma una de las distribuciones en la otra.
+\end{prop}
+
+ Consideremos $f$ función continua en $\left[a,b\right]$, la
+función de distribución de las imagenes $f\left(\left[a,b\right]\right)$
+está dado por la transformación de variable aleatoria de la
+distribución uniforme en $[a,b]$
+
+\begin{prop} La funcion de distrinucion acumulada de una variable
+  aleatoria $Y=f\left(X\right)$ donde $X\sim U\left(a,b\right)$  
+\end{prop}
+
+$rec(f)\sim F_f$ la función de orden de $f$ está dada por $sort(f) =
+f(F_f(f(x)))$
+
+Sea $f:\left[a,b\right]\to\mathbb{R}$
+
+\begin{proof}
+	Consideremos $X\sim \mathbb{U}\left(a,b\right)$ con $a<b \in \mathbb{R}$
+\end{proof}
+
+\begin{prop}
+ La cantidad de relaciones existentes entre las variables es igual a la cantidad
+ de mínimos locales existentes que minimizan el error de la combinación lineal
+ convexa.
+\end{prop}
+
+
+
+
+\end{document} 
