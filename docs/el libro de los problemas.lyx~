@@ -83,8 +83,8 @@ Las series de tiempo son.
 \begin_inset Formula $f\left(x+h\right)$
 \end_inset
 
- como combinación de los valores anteriores de 
-\begin_inset Formula $f\left(x\right)$
+ como combinación lineal de los valores anteriores de 
+\begin_inset Formula $f\left(t\right)$
 \end_inset
 
 
@@ -126,7 +126,49 @@ que tiene buen comportamiento cuando
 \end_inset
 
 .
- Derivando en ambos lados
+ Derivando en ambos lados obtenemos que
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+f'\left(t\right)+f''\left(t\right)\cdot h=\psi\left(t\right)f\left(t\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+La cual es una ecuación diferencial lineal de segundo orden de coeficientes
+ variables
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\[
+f''\left(t\right)\cdot h+f'\left(t\right)-\psi\left(t\right)f\left(t\right)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+La cual se puede resumir en la ecuación diferencial de Sturm‐Liouville,
+ esto nos permite encontrar la solución como combinación lineal de una base
+ ortogonal
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Problem
+¿Existe alguna relación entre en análisis de componentes principales y el
+ metodo de ortogonalización de Grand-Smith?
 \end_layout
 
 \end_body
