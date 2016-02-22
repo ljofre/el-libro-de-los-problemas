@@ -167,8 +167,156 @@ La cual se puede resumir en la ecuación diferencial de Sturm‐Liouville,
 \end_layout
 
 \begin_layout Problem
+Encuentre el valor de 
+\begin_inset Formula $h$
+\end_inset
+
+ que optimice 
+\begin_inset Formula $\mbox{cov}\left(f\left(t\right),f\left(t+h\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Problem
+\begin_inset Formula 
+\begin{eqnarray*}
+\mbox{cov}\left(f\left(t\right),f\left(t+h\right)\right) & = & \mbox{cov}\left(f\left(t\right),f\left(t+h\right)\right)\\
+ & = & \mbox{cov}\left(f\left(t\right),f\left(t\right)+f'\left(t\right)\cdot h\right)\\
+ & = & \mbox{cov}\left(f\left(t\right),f\left(t\right)\right)+h\cdot\mbox{cov}\left(f\left(t\right),f'\left(t\right)\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Problem
+Encuentre la función 
+\begin_inset Formula $\psi\left(x\right)$
+\end_inset
+
+ que produzca que 
+\begin_inset Formula 
+\[
+\frac{\sum_{i=1}^{n}\left(y_{i}-\int\psi\left(t\right)x_{i}^{t}dt\right)^{2}}{n}
+\]
+
+\end_inset
+
+ sea mínimo
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Problem
 ¿Existe alguna relación entre en análisis de componentes principales y el
  metodo de ortogonalización de Grand-Smith? 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Problem
+Sea dos conjuntos de entidades, una de 
+\begin_inset Formula $m$
+\end_inset
+
+ elementos y otra de 
+\begin_inset Formula $n$
+\end_inset
+
+ elementos.
+ El primer conjunto de entidades selecciona 
+\begin_inset Formula $n_{i}$
+\end_inset
+
+ elementos de la segunda entidadad asignandole un número since zero to one.
+ Si el numero asignado es menor a 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ entonces se devuelve el elemento a la bolsa.
+ Los elementos a los que se le asignó un número entre 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ y 
+\begin_inset Formula $1$
+\end_inset
+
+ quedan marcados y no volverán a ser marcados y pueden ahora ser seleccionados
+ por otros elementos de 
+\begin_inset Formula $M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Problem
+Defina lo que es un espacio de Hilbert y encuentre 10 ejemplos
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Problem
+Defina lo que es un espacio de Banach y encuentre 10 ejemplos
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Problem
+Sea un campo escalar que representa el campo gravitacional generado por
+ un triangulo, dado el campo escalar encuentre los vertices del triángulo
+ que más se asemeje al mismo.
+ Defina el algoritmo de decenso de gradiente necesario.
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Problem
+Un ejemplo de Filtro de Kalman (mejorar esta pregunta)
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Standard
+Demostrar todas las propiedades de la covarianza
+\end_layout
+
+\begin_layout Problem
+Demuestre que 
+\begin_inset Formula $\min\mbox{cov}\left(f\left(t\right),g\left(ax+b\right)\right)$
+\end_inset
+
+ si se cumple que 
+\begin_inset Formula $\mbox{cov}\left(f\left(t\right),\frac{\partial}{\partial a}g\left(ax+b\right)\right)=0$
+\end_inset
+
+ y 
+\begin_inset Formula $\mbox{cov}\left(f\left(t\right),\frac{\partial}{\partial b}g\left(ax+b\right)\right)=0$
+\end_inset
+
+
 \end_layout
 
 \end_body
