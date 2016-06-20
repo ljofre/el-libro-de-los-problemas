@@ -26,3 +26,5 @@
 *.mtc
 *.mtc0
 .Rproj.user
+*.lyx~
+*.lyx#
